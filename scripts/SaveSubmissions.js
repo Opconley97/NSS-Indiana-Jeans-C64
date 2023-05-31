@@ -1,13 +1,13 @@
 import { SaveSurveySubmission } from "./TransientState.js";
 
-const handleSurveySubmissionClicl = (clickEvent) => {
+const handleSurveySubmissionClick = (clickEvent) => {
     if (clickEvent.target.id === "saveSubmission") {
         SaveSurveySubmission()
     }
 }
 
 export const SaveSubmission = () => {
-    document.addEventListener("click", handleSurveySubmissionClicl)
+    document.addEventListener("click", handleSurveySubmissionClick)
 
-    return "<button id='saveSubmission'>Save Submission</button>"
+    return "<div><button id='saveSubmission'>Save Submission</button></div>"
 }
